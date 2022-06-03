@@ -109,7 +109,6 @@ CREATE TABLE ergo
    
 );
 
-
 CREATE TABLE paradoteo
 (
   titlos_paradoteou VARCHAR(255) NOT NULL,
@@ -137,4 +136,3 @@ CREATE TABLE ergazetai_se_ergo
   FOREIGN KEY (ergo_id) REFERENCES ergo(ergo_id) ON DELETE RESTRICT ON UPDATE CASCADE,
   FOREIGN KEY (ssn) REFERENCES ereunitis(ssn) ON DELETE RESTRICT ON UPDATE CASCADE
 );
-
