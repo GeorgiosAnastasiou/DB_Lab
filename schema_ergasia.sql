@@ -13,9 +13,10 @@ CREATE TABLE stelexos
 
 CREATE TABLE programma
 (
+  programma_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
   dieuthinsi_programmatos VARCHAR(255) NOT NULL,
   onoma_programmatos VARCHAR(255) NOT NULL,
-  PRIMARY KEY (onoma_programmatos)
+  PRIMARY KEY (programma_id)
 );
 
 CREATE TABLE organismos
@@ -33,7 +34,7 @@ CREATE TABLE panephstimio
   proypologismos_yp FLOAT NOT NULL,
   syntomografia VARCHAR(50) NOT NULL,
   PRIMARY KEY (syntomografia),
-  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia)
+  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE etairia
@@ -41,7 +42,7 @@ CREATE TABLE etairia
   idia_kefalaia FLOAT NOT NULL,
   syntomografia VARCHAR(50) NOT NULL,
   PRIMARY KEY (syntomografia),
-  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia)
+  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE er_kentro
@@ -50,27 +51,28 @@ CREATE TABLE er_kentro
   proypologismos_id FLOAT NOT NULL,
   syntomografia VARCHAR(50) NOT NULL,
   PRIMARY KEY (syntomografia),
-  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia)
+  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE organismos_thlefwna
 (
-  thlefwna INT NOT NULL,
+  thlefwna BIGINT NOT NULL,
   syntomografia VARCHAR(50) NOT NULL,
   PRIMARY KEY (thlefwna, syntomografia),
-  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia)
+  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE ereunitis
 (
   onoma VARCHAR(45) NOT NULL,
   epitheto VARCHAR(45) NOT NULL,
-  fylo INT NOT NULL,
+  fylo VARCHAR(1) NOT NULL,
   hmeromhnia_gennhshs DATE NOT NULL,
+  hmeromhnia_ergasias DATE NOT NULL,
   ssn INT UNSIGNED NOT NULL AUTO_INCREMENT,
   syntomografia VARCHAR(50) NOT NULL,
   PRIMARY KEY (ssn),
-  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia)
+  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE aksiologisi
@@ -80,55 +82,59 @@ CREATE TABLE aksiologisi
   aksiologisi_id INT UNSIGNED NOT NULL UNIQUE AUTO_INCREMENT,
   ssn INT UNSIGNED NOT NULL,
   PRIMARY KEY (aksiologisi_id),
-  FOREIGN KEY (ssn) REFERENCES ereunitis(ssn)
+  FOREIGN KEY (ssn) REFERENCES ereunitis(ssn)  ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE ergo
 (
+  ergo_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
   titlos VARCHAR(255) NOT NULL,
   poso FLOAT NOT NULL,
   perilipsi VARCHAR(2550) NOT NULL,
   liksi DATE NOT NULL,
   enarksi DATE NOT NULL,
   stelexos_id INT UNSIGNED NOT NULL ,
-  onoma_programmatos VARCHAR(255) NOT NULL,
+  programma_id INT UNSIGNED NOT NULL,
   ssn INT UNSIGNED NOT NULL,
-  aksiologeissn INT UNSIGNED NOT NULL,
+  -- aksiologeissn INT UNSIGNED NOT NULL,
   syntomografia VARCHAR(50) NOT NULL,
   aksiologisi_id INT UNSIGNED NOT NULL,
-  PRIMARY KEY (titlos),
-  FOREIGN KEY (stelexos_id) REFERENCES stelexos(stelexos_id),
-  FOREIGN KEY (onoma_programmatos) REFERENCES programma(onoma_programmatos),
-  FOREIGN KEY (ssn) REFERENCES ereunitis(ssn),
-  FOREIGN KEY (aksiologeissn) REFERENCES ereunitis(ssn),
-  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia),
-  FOREIGN KEY (aksiologisi_id) REFERENCES aksiologisi(aksiologisi_id)
+  PRIMARY KEY (ergo_id),
+  FOREIGN KEY (stelexos_id) REFERENCES stelexos(stelexos_id) ON DELETE RESTRICT ON UPDATE CASCADE,
+  FOREIGN KEY (programma_id) REFERENCES programma(programma_id) ON DELETE RESTRICT ON UPDATE CASCADE,
+  FOREIGN KEY (ssn) REFERENCES ereunitis(ssn) ON DELETE RESTRICT ON UPDATE CASCADE,
+  -- FOREIGN KEY (aksiologeissn) REFERENCES ereunitis(ssn) ON DELETE RESTRICT ON UPDATE CASCADE,
+  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia) ON DELETE RESTRICT ON UPDATE CASCADE,
+  FOREIGN KEY (aksiologisi_id) REFERENCES aksiologisi(aksiologisi_id) ON DELETE RESTRICT ON UPDATE CASCADE
    
 );
+
 
 CREATE TABLE paradoteo
 (
   titlos_paradoteou VARCHAR(255) NOT NULL,
   perilipsi_paradoteou VARCHAR(2550) NOT NULL,
-  titlos VARCHAR(255) NOT NULL,
-  PRIMARY KEY (titlos_paradoteou, titlos),
-  FOREIGN KEY (titlos) REFERENCES ergo(titlos)
+  hm_paradoshs DATE NOT NULL,
+  ergo_id INT UNSIGNED NOT NULL,
+  PRIMARY KEY (titlos_paradoteou, ergo_id),
+  FOREIGN KEY (ergo_id) REFERENCES ergo(ergo_id) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE epist_pediou_ergou
 (
   onoma_epist_pediou VARCHAR(255) NOT NULL,
-  titlos VARCHAR(255) NOT NULL,
-  PRIMARY KEY (onoma_epist_pediou, titlos),
-  FOREIGN KEY (onoma_epist_pediou) REFERENCES epist_pedio(onoma_epist_pediou),
-  FOREIGN KEY (titlos) REFERENCES ergo(titlos)
+  ergo_id INT UNSIGNED NOT NULL,
+  PRIMARY KEY (onoma_epist_pediou, ergo_id),
+  FOREIGN KEY (onoma_epist_pediou) REFERENCES epist_pedio(onoma_epist_pediou) ON DELETE RESTRICT ON UPDATE CASCADE,
+  FOREIGN KEY (ergo_id) REFERENCES ergo(ergo_id) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE ergazetai_se_ergo
 (
-  titlos VARCHAR(255) NOT NULL,
+  ergo_id INT UNSIGNED NOT NULL,
   ssn INT UNSIGNED NOT NULL,
-  PRIMARY KEY (titlos, ssn),
-  FOREIGN KEY (titlos) REFERENCES ergo(titlos),
-  FOREIGN KEY (ssn) REFERENCES ereunitis(ssn)
+  PRIMARY KEY (ergo_id, ssn),
+  FOREIGN KEY (ergo_id) REFERENCES ergo(ergo_id) ON DELETE RESTRICT ON UPDATE CASCADE,
+  FOREIGN KEY (ssn) REFERENCES ereunitis(ssn) ON DELETE RESTRICT ON UPDATE CASCADE
 );
+
