@@ -355,193 +355,128 @@ insert into ereunitis (onoma, epitheto, fylo, hmeromhnia_gennhshs, hmeromhnia_er
 insert into ereunitis (onoma, epitheto, fylo, hmeromhnia_gennhshs, hmeromhnia_ergasias, syntomografia) values ('Diena', 'Reeme', 'F', '1984-09-21', '2019-09-08', 'RCT');
 insert into ereunitis (onoma, epitheto, fylo, hmeromhnia_gennhshs, hmeromhnia_ergasias, syntomografia) values ('Huey', 'Adne', 'M', '1984-11-09', '2013-03-11', 'RCBOH');
 
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (45, '2020-01-02', 2);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (100, '2020-05-30', 4);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (94, '2020-02-21', 6);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (59, '2020-01-27', 8);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (90, '2020-05-13', 10);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (36, '2020-01-07', 12);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (81, '2020-01-13', 14);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (57, '2020-01-28', 16);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (83, '2020-03-16', 18);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (67, '2020-01-02', 20);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (76, '2020-03-09', 22);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (54, '2020-05-13', 24);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (72, '2020-02-24', 26);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (68, '2020-01-08', 28);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (95, '2020-04-12', 30);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (45, '2020-01-11', 32);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (54, '2020-03-04', 34);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (34, '2020-04-06', 36);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (67, '2020-02-22', 15);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (87, '2020-05-14', 40);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (34, '2020-03-19', 42);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (51, '2020-05-12', 44);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (71, '2020-01-20', 46);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (59, '2020-04-15', 48);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (64, '2020-01-03', 50);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (71, '2020-01-05', 52);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (39, '2020-05-30', 54);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (98, '2020-01-26', 56);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (48, '2020-04-17', 58);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (45, '2020-04-03', 60);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (91, '2020-04-02', 62);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (89, '2020-04-19', 64);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (63, '2020-03-08', 66);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (37, '2020-04-24', 68);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (30, '2020-04-29', 70);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (50, '2020-03-16', 72);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (71, '2020-02-26', 74);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (31, '2020-05-08', 76);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (94, '2020-03-31', 78);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (91, '2020-04-16', 80);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (50, '2020-03-21', 82);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (38, '2020-01-11', 84);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (67, '2020-01-11', 86);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (74, '2020-05-26', 88);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (99, '2020-02-12', 90);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (56, '2020-01-16', 92);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (33, '2020-04-30', 94);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (64, '2020-03-04', 96);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (73, '2020-05-04', 98);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (37, '2020-02-26', 100);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (83, '2020-03-03', 102);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (92, '2020-05-18', 104);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (70, '2020-04-28', 106);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (64, '2020-04-15', 108);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (89, '2020-02-17', 1);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (88, '2020-02-02', 13);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (100, '2020-01-05', 5);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (97, '2020-05-04', 7);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (62, '2020-02-28', 9);
-insert into aksiologisi (bathmos, hmeromhnia, ssn) values (44, '2020-05-18', 11);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (45, '2019-01-02', 8);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (100, '2019-05-30', 4);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (94, '2019-02-21', 6);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (59, '2019-01-27', 2);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (90, '2019-05-13', 10);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (36, '2019-01-07', 12);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (81, '2019-01-13', 14);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (57, '2019-01-28', 16);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (83, '2019-03-16', 18);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (67, '2019-01-02', 24);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (76, '2019-03-09', 22);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (54, '2019-05-13', 20);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (72, '2019-02-24', 26);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (68, '2019-01-08', 28);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (95, '2019-04-12', 30);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (45, '2019-01-11', 32);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (54, '2019-03-04', 34);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (34, '2019-04-06', 36);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (67, '2019-02-22', 15);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (87, '2019-05-14', 40);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (34, '2019-03-19', 42);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (51, '2019-05-12', 44);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (71, '2019-01-20', 47);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (59, '2019-04-15', 48);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (64, '2019-01-03', 50);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (71, '2019-01-05', 52);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (39, '2019-05-30', 54);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (98, '2019-01-26', 56);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (48, '2019-04-17', 58);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (45, '2019-04-03', 60);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (91, '2019-04-02', 62);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (89, '2019-04-19', 64);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (63, '2019-03-08', 66);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (37, '2019-04-24', 68);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (30, '2019-04-29', 70);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (50, '2019-03-16', 72);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (71, '2019-02-26', 74);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (31, '2019-05-08', 76);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (94, '2019-03-31', 78);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (91, '2019-04-16', 80);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (50, '2019-03-21', 82);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (38, '2019-01-11', 84);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (67, '2019-01-11', 86);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (74, '2019-05-26', 88);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (99, '2019-02-12', 90);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (56, '2019-01-16', 92);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (33, '2019-04-30', 94);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (64, '2019-03-04', 96);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (73, '2019-05-04', 98);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (37, '2019-02-26', 100);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (83, '2019-03-03', 102);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (92, '2019-05-18', 104);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (70, '2019-04-28', 106);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (64, '2019-04-15', 108);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (89, '2019-02-17', 1);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (88, '2019-02-02', 13);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (100, '2019-01-05', 5);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (97, '2019-05-04', 7);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (62, '2019-02-28', 9);
+insert into aksiologisi (bathmos, hmeromhnia, ssn) values (44, '2019-05-18', 11);
 
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('luctus nec molestie sed justo pellentesque viverra', 751937, 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('elit ac nulla sed vel enim sit amet', 963110, 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', '2021-08-20', '2023-10-01', 62, 5, 1, 'KLM', 1);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('posuere felis sed lacus morbi', 500230, 'In congue. Etiam justo. Etiam pretium iaculis justo.', '2020-05-17', '2023-05-02', 59, 17, 2, 'KLM', 2);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('quis turpis eget elit sodales scelerisque mauris', 240800, 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '2020-03-12', '2023-08-20', 30, 8, 3, 'UMCE', 3);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('congue etiam justo etiam', 412667, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', '2020-09-15', '2023-10-04', 59, 14, 4, 'DTIT', 4);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('rhoncus mauris enim leo', 929863, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', '2021-08-07', '2023-06-17', 25, 10, 5, 'RH', 5);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('semper porta volutpat quam pede lobortis ligula', 914592, 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2021-10-19', '2023-11-21', 30, 13, 6, 'DYUT', 6);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('ridiculus mus vivamus vestibulum sagittis sapien', 512910, 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2020-11-10', '2023-04-01', 53, 19, 7, 'DTIT', 7);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('mattis nibh ligula nec', 339217, 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', '2021-03-17', '2023-11-08', 58, 6, 8, 'DTIT', 8);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('cubilia curae mauris viverra diam vitae quam', 885966, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', '2020-12-30', '2023-01-24', 6, 17, 9, 'BC', 9);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('in tempus sit amet', 779808, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', '2020-11-08', '2023-04-05', 40, 8, 10, 'MGWC', 10);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('libero quis orci nullam molestie nibh', 522096, 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '2021-09-04', '2023-12-14', 50, 9, 11, 'MLUHW', 11);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('felis donec semper sapien a', 386840, 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', '2021-05-24', '2023-09-12', 10, 26, 12, 'KLM', 12);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('tortor risus dapibus augue vel accumsan tellus nisi', 219026, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', '2021-01-20', '2023-11-11', 7, 17, 13, 'TG', 13);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('tincidunt in leo maecenas pulvinar lobortis', 535536, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2020-10-27', '2023-07-05', 62, 21, 14, 'UOM', 14);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('blandit non interdum in', 443724, 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', '2021-07-14', '2023-11-17', 49, 4, 15, 'SHRC', 15);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('justo morbi ut odio cras', 977027, 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', '2021-02-28', '2023-10-03', 26, 25, 16, 'NRCSP', 16);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('aliquam augue quam sollicitudin vitae consectetuer', 220653, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', '2021-10-01', '2023-01-17', 73, 22, 17, 'BC', 17);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('sit amet eros suspendisse accumsan tortor quis turpis', 547400, 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', '2020-05-11', '2023-05-02', 20, 22, 18, 'CAO', 18);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('ac diam cras pellentesque volutpat dui maecenas tristique', 864781, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2020-02-27', '2023-05-23', 19, 1, 19, 'TUT', 19);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('ullamcorper purus sit amet nulla quisque arcu libero', 954904, 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', '2020-03-13', '2023-12-27', 3, 6, 20, 'MGWC', 20);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('sed vestibulum sit amet cursus id turpis integer', 121933, 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', '2020-06-05', '2023-03-25', 54, 13, 21, 'SHRC', 21);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('ipsum dolor sit amet', 165412, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2021-09-04', '2023-08-23', 28, 9, 22, 'RS', 22);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('vulputate ut ultrices vel augue vestibulum', 619168, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', '2020-09-20', '2023-05-11', 22, 12, 23, 'GCU', 23);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('velit donec diam neque vestibulum', 884723, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2021-05-21', '2023-08-30', 13, 27, 24, 'KLM', 24);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('hendrerit at vulputate vitae nisl', 345932, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', '2020-05-03', '2023-08-13', 60, 8, 25, 'AUE', 25);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('nulla neque libero convallis eget eleifend luctus', 663696, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2021-07-25', '2023-06-15', 43, 18, 26, 'UCI', 26);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('luctus nec molestie sed justo pellentesque', 369104, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', '2020-12-04', '2023-07-10', 20, 9, 27, 'DTIT', 27);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('at turpis donec posuere metus vitae', 494980, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', '2020-11-27', '2023-02-17', 58, 18, 28, 'GCU', 28);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('libero nullam sit amet turpis elementum', 719862, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2020-04-26', '2023-02-21', 28, 26, 29, 'FS', 29);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('in imperdiet et commodo', 152233, 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2020-01-02', '2023-04-26', 39, 19, 30, 'MGWC', 30);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('nulla ac enim in tempor', 896539, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2021-01-29', '2023-09-29', 60, 8, 31, 'DYUT', 31);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('quisque ut erat curabitur', 220454, 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '2021-07-20', '2023-01-28', 44, 23, 32, 'CAO', 32);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('ipsum primis in faucibus orci luctus', 469434, 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', '2020-04-11', '2023-08-28', 26, 28, 33, 'RH', 33);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('luctus et ultrices posuere cubilia curae nulla', 136048, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2020-01-20', '2023-02-23', 42, 14, 34, 'AUE', 34);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('amet diam in magna bibendum imperdiet nullam orci', 380703, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2021-05-21', '2023-12-07', 58, 15, 35, 'GCU', 35);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('arcu adipiscing molestie hendrerit at vulputate vitae nisl', 678067, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2020-01-29', '2023-09-17', 44, 29, 36, 'WU', 36);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('posuere nonummy integer non velit donec diam neque', 585689, 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', '2021-09-09', '2023-07-09', 54, 1, 37, 'GCU', 37);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('nullam porttitor lacus at turpis', 304159, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', '2021-09-03', '2023-08-13', 11, 23, 38, 'UMCE', 38);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('praesent blandit nam nulla integer pede', 126577, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', '2021-06-17', '2023-12-06', 4, 10, 39, 'SRC', 39);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('tincidunt eget tempus vel pede morbi porttitor lorem', 552699, 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', '2020-03-01', '2023-01-27', 72, 30, 40, 'GCU', 40);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('ac diam cras pellentesque volutpat dui', 912862, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', '2020-12-03', '2023-10-07', 47, 2, 41, 'FS', 41);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('aenean fermentum donec ut mauris eget', 842423, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2020-04-25', '2023-06-08', 26, 6, 42, 'CAO', 42);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('cubilia curae nulla dapibus', 720078, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', '2021-02-16', '2023-10-31', 73, 28, 43, 'RCT', 43);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('proin at turpis a', 192639, 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', '2021-05-31', '2023-07-03', 61, 17, 44, 'RH', 44);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('tempor convallis nulla neque libero convallis', 891282, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', '2020-07-12', '2023-10-27', 49, 21, 45, 'OG', 45);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('dui vel nisl duis ac nibh', 682382, 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', '2021-01-13', '2023-10-20', 69, 25, 46, 'GCU', 46);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('sollicitudin ut suscipit a feugiat et', 172994, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2021-01-06', '2023-05-11', 47, 14, 47, 'RCT', 47);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('vestibulum rutrum rutrum neque aenean auctor gravida sem', 311583, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', '2020-07-16', '2023-01-01', 33, 7, 48, 'TG', 48);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('ut nunc vestibulum ante', 291144, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2020-08-21', '2023-06-09', 8, 1, 49, 'RCT', 49);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('ut odio cras mi', 382908, 'Phasellus in felis. Donec semper sapien a libero. Nam dui.', '2020-08-18', '2023-06-27', 37, 28, 50, 'RCM', 50);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('dolor vel est donec', 961110, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '2020-10-23', '2023-12-16', 12, 9, 51, 'BC', 51);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('pretium iaculis justo in hac habitasse', 583312, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', '2020-08-27', '2023-03-23', 56, 7, 52, 'BC', 52);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('dui vel nisl duis ac nibh fusce', 889584, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', '2021-05-01', '2023-04-07', 20, 17, 53, 'RCBOH', 53);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('id turpis integer aliquet massa id lobortis', 774379, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '2020-06-17', '2023-08-11', 32, 6, 54, 'USPC', 54);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('enim in tempor turpis nec euismod', 827052, 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', '2021-12-04', '2023-11-14', 45, 10, 55, 'OG', 55);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('justo in blandit ultrices enim', 154899, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2020-09-09', '2023-05-11', 20, 5, 56, 'MLUHW', 56);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('luctus et ultrices posuere cubilia curae nulla dapibus', 277867, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2021-04-07', '2023-12-05', 13, 20, 57, 'UMCE', 57);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('dolor quis odio consequat', 337884, 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', '2021-02-18', '2023-09-07', 64, 12, 58, 'NUIG', 58);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('nulla facilisi cras non velit nec', 274637, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', '2021-04-16', '2023-05-25', 41, 12, 59, 'UCI', 59);
+insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('consequat nulla nisl nunc nisl duis bibendum felis', 186390, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', '2021-01-18', '2023-06-21', 73, 12, 60, 'DTIT', 60);
 
-Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', '2020-11-11', '2022-08-10', 49, 16, 55, 'SHRC', 1);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('est quam pharetra magna ac consequat metus sapien', 991072, 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
-
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2020-11-06', '2023-08-24', 43, 19, 95, 'USPC', 2);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('consequat ut nulla sed accumsan felis ut at', 837329, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
-
-Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', '2020-09-07', '2023-08-14', 42, 13, 61, 'UV', 3);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('integer tincidunt ante vel', 585152, 'In congue. Etiam justo. Etiam pretium iaculis justo.', '2020-10-03', '2023-09-16', 45, 13, 54, 'BC', 4);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('sed tincidunt eu felis', 535198, 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', '2020-10-17', '2023-09-27', 30, 13, 79, 'UCI', 5);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('dui vel sem sed sagittis nam', 346013, 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', '2020-09-23', '2023-08-11', 40, 17, 107, 'HD', 6);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('pulvinar lobortis est phasellus sit amet erat', 238726, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', '2020-10-02', '2023-12-21', 31, 29, 58, 'RWC', 7);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('facilisi cras non velit nec nisi', 347065, 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
-
-In congue. Etiam justo. Etiam pretium iaculis justo.', '2020-10-03', '2023-05-16', 13, 21, 99, 'RAS', 8);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('habitasse platea dictumst etiam faucibus cursus', 636249, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', '2020-11-27', '2023-01-19', 35, 19, 91, 'DTIT', 9);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('platea dictumst etiam faucibus cursus urna ut tellus', 887658, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
-
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2020-09-15', '2022-07-21', 32, 20, 105, 'UNI', 10);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('amet nulla quisque arcu', 843811, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2020-10-21', '2022-03-22', 41, 20, 103, 'TG', 11);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('quam fringilla rhoncus mauris enim leo rhoncus', 532925, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2020-10-03', '2023-07-10', 57, 11, 93, 'SRC', 12);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('est risus auctor sed tristique in tempus sit', 114828, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', '2020-12-14', '2022-03-03', 37, 3, 1, 'RH', 13);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('habitasse platea dictumst maecenas ut', 332131, 'In congue. Etiam justo. Etiam pretium iaculis justo.', '2020-09-26', '2023-03-05', 15, 13, 48, 'STPU', 14);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('eros elementum pellentesque quisque porta', 230520, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', '2020-10-20', '2023-04-07', 64, 25, 41, 'CAO', 15);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('ut odio cras mi pede malesuada in imperdiet', 296550, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
-
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', '2020-11-03', '2023-06-04', 67, 19, 85, 'UMCE', 16);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('vel augue vestibulum rutrum rutrum neque', 341394, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', '2020-12-05', '2022-12-10', 54, 29, 61, 'NAUR', 17);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('tortor id nulla ultrices aliquet maecenas', 447644, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2020-12-21', '2022-05-03', 23, 4, 94, 'NWRCP', 18);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('nisl ut volutpat sapien arcu', 720984, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2020-11-24', '2023-09-06', 56, 19, 18, 'UMCE', 19);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('fusce lacus purus aliquet at feugiat', 829878, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
-
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', '2020-10-31', '2022-09-01', 68, 8, 60, 'RCT', 20);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('nec sem duis aliquam convallis nunc proin at', 590371, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', '2020-09-04', '2023-06-11', 35, 29, 101, 'RH', 21);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('amet eros suspendisse accumsan tortor quis', 323074, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', '2020-09-27', '2023-06-25', 20, 3, 76, 'DTIT', 22);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('vestibulum sed magna at nunc', 293668, 'Fusce consequat. Nulla nisl. Nunc nisl.
-
-Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', '2020-10-20', '2023-08-02', 11, 18, 22, 'RCBOH', 23);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('rutrum at lorem integer tincidunt ante vel', 572522, 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', '2020-10-22', '2023-01-28', 60, 30, 99, 'NAUR', 24);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('non velit donec diam neque vestibulum eget', 122656, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', '2020-10-02', '2022-08-27', 50, 13, 15, 'RWC', 25);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('dapibus dolor vel est donec', 951956, 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', '2020-10-17', '2022-05-15', 75, 2, 77, 'STPU', 26);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('lobortis vel dapibus at', 452356, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
-
-Sed ante. Vivamus tortor. Duis mattis egestas metus.', '2020-09-05', '2022-07-12', 3, 2, 89, 'RH', 27);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('in purus eu magna vulputate luctus cum sociis', 201819, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', '2020-12-09', '2023-06-03', 28, 15, 85, 'STPU', 28);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('nulla suspendisse potenti cras in purus eu magna', 954504, 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', '2020-12-03', '2022-07-26', 29, 27, 16, 'RCBOH', 29);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('habitasse platea dictumst maecenas ut massa quis augue', 112284, 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
-
-Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', '2020-11-13', '2022-10-31', 69, 7, 10, 'GCU', 30);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('ipsum dolor sit amet consectetuer', 901342, 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', '2020-10-01', '2023-03-27', 33, 19, 44, 'MGWC', 31);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('quisque porta volutpat erat quisque erat', 395892, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
-
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', '2020-12-27', '2023-05-09', 47, 23, 29, 'UNI', 32);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('accumsan odio curabitur convallis duis consequat dui', 222221, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
-
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', '2020-09-21', '2022-08-24', 68, 9, 37, 'RCM', 33);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('nunc proin at turpis', 795935, 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
-
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', '2020-09-16', '2023-04-06', 31, 18, 107, 'UMCE', 34);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('turpis nec euismod scelerisque quam turpis adipiscing', 393910, 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
-
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2020-12-10', '2024-01-06', 41, 6, 84, 'STPU', 35);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('velit id pretium iaculis diam erat fermentum', 954991, 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
-
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', '2020-11-17', '2023-02-23', 69, 16, 50, 'MI', 36);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('in leo maecenas pulvinar lobortis est phasellus sit', 856655, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', '2020-12-25', '2022-10-28', 61, 10, 77, 'BC', 37);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('tincidunt nulla mollis molestie', 684508, 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
-
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', '2020-10-15', '2023-03-24', 13, 16, 99, 'TUT', 38);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('luctus cum sociis natoque', 979229, 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '2020-10-09', '2023-11-02', 15, 7, 81, 'SHRC', 39);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('nam ultrices libero non mattis pulvinar nulla', 169092, 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2020-11-20', '2023-09-05', 21, 3, 104, 'HD', 40);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('nascetur ridiculus mus vivamus', 309134, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', '2020-11-23', '2022-09-15', 74, 20, 16, 'CIS', 41);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('tristique fusce congue diam id ornare imperdiet', 331723, 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', '2020-09-21', '2023-03-15', 24, 21, 57, 'GCU', 42);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('eleifend donec ut dolor', 649134, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
-
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', '2020-11-13', '2023-10-05', 7, 8, 83, 'TUT', 43);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('lacinia eget tincidunt eget tempus vel pede morbi', 461665, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', '2020-12-24', '2023-03-03', 7, 18, 6, 'USPC', 44);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('amet sapien dignissim vestibulum', 631647, 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
-
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', '2020-09-22', '2022-12-31', 33, 5, 45, 'SRC', 45);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('sem fusce consequat nulla nisl', 488006, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', '2020-12-16', '2022-11-11', 31, 8, 85, 'RCM', 46);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('nulla suscipit ligula in lacus curabitur at ipsum', 658218, 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', '2020-09-07', '2022-08-27', 51, 11, 47, 'TUT', 47);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('luctus et ultrices posuere cubilia curae', 822573, 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
-
-In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', '2020-11-15', '2023-03-07', 37, 22, 24, 'CAO', 48);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('ut volutpat sapien arcu', 354722, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', '2020-11-17', '2022-10-16', 68, 14, 82, 'GCU', 49);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('et eros vestibulum ac est lacinia nisi', 237196, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', '2020-11-11', '2023-11-22', 70, 30, 4, 'CAO', 50);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('fusce congue diam id ornare', 424782, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
-
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', '2020-11-04', '2023-06-17', 62, 3, 92, 'NWRCP', 51);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('massa id nisl venenatis lacinia aenean', 756016, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', '2020-12-05', '2022-04-01', 42, 7, 98, 'RCBOH', 52);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('quisque erat eros viverra eget congue eget', 497216, 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', '2020-10-14', '2022-10-28', 4, 13, 36, 'TUT', 53);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('viverra diam vitae quam suspendisse potenti nullam', 179360, 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '2020-09-08', '2023-05-22', 17, 22, 5, 'NUIG', 54);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('aliquam lacus morbi quis', 778259, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
-
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2020-12-25', '2023-06-06', 3, 17, 52, 'DTIT', 55);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('sem sed sagittis nam congue risus', 752761, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', '2020-12-13', '2023-05-09', 20, 21, 49, 'UMCE', 56);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('maecenas tristique est et tempus semper est', 698028, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', '2020-11-08', '2022-08-10', 1, 19, 86, 'UMCE', 57);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('ipsum primis in faucibus orci', 833750, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
-
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', '2020-09-20', '2023-11-14', 6, 26, 80, 'GCU', 58);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('turpis integer aliquet massa', 512138, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2020-09-08', '2023-12-14', 18, 12, 59, 'NWRCP', 59);
-insert into ergo (titlos, poso, perilipsi, enarksi, liksi, stelexos_id, programma_id, ssn, syntomografia, aksiologisi_id) values ('eu magna vulputate luctus cum sociis natoque penatibus', 754931, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
-
-Sed ante. Vivamus tortor. Duis mattis egestas metus.', '2020-11-15', '2022-05-15', 42, 1, 30, 'RCM', 60);
 
 insert into paradoteo (titlos_paradoteou, perilipsi_paradoteou, hm_paradoshs, ergo_id) values ('mattis pulvinar nulla pede ullamcorper', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', '2021-02-24', 9);
 insert into paradoteo (titlos_paradoteou, perilipsi_paradoteou, hm_paradoshs, ergo_id) values ('in magna bibendum imperdiet nullam orci pede venenatis', 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', '2021-10-10', 29);
@@ -654,3 +589,128 @@ insert into epist_pediou_ergou (onoma_epist_pediou, ergo_id) values ('Chemical s
 insert into epist_pediou_ergou (onoma_epist_pediou, ergo_id) values ('Industrial biotechnology', 10);
 insert into epist_pediou_ergou (onoma_epist_pediou, ergo_id) values ('Computer and information sciences', 35);
 insert into epist_pediou_ergou (onoma_epist_pediou, ergo_id) values ('Nano-technology', 50);
+
+insert into ergazetai_se_ergo (ergo_id, ssn) values (1, 1);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (2, 2);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (3, 3);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (4, 4);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (5, 5);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (6, 6);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (7, 7);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (8, 8);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (9, 9);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (10, 10);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (11, 11);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (12, 12);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (13, 13);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (14, 14);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (15, 15);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (16, 16);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (17, 17);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (18, 18);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (19, 19);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (20, 20);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (21, 21);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (22, 22);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (23, 23);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (24, 24);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (25, 25);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (26, 26);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (27, 27);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (28, 28);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (29, 29);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (30, 30);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (31, 31);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (32, 32);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (33, 33);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (34, 34);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (35, 35);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (36, 36);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (37, 37);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (38, 38);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (39, 39);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (40, 40);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (41, 41);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (42, 42);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (43, 43);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (44, 44);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (45, 45);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (46, 46);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (47, 47);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (48, 48);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (49, 49);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (50, 50);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (51, 51);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (52, 52);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (53, 53);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (54, 54);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (55, 55);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (56, 56);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (57, 57);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (58, 58);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (59, 59);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (60, 60);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (13, 65);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (48, 65);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (36, 66);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (9, 68);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (17, 68);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (51, 68);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (52, 68);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (10, 69);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (20, 69);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (30, 69);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (29, 70);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (41, 70);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (14, 72);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (43, 73);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (47, 73);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (49, 73);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (4, 74);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (7, 74);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (8, 74);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (27, 74);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (60, 74);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (9, 75);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (17, 75);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (51, 75);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (52, 75);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (58, 76);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (5, 78);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (33, 78);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (44, 78);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (10, 79);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (20, 79);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (30, 79);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (29, 80);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (41, 80);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (45, 81);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (55, 81);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (36, 82);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (14, 83);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (10, 85);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (20, 85);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (30, 85);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (29, 88);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (41, 88);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (11, 90);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (56, 90);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (13, 91);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (48, 91);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (29, 93);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (41, 93);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (54, 95);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (6, 96);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (31, 96);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (54, 97);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (53, 99);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (14, 101);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (19, 103);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (58, 104);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (10, 105);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (20, 105);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (30, 105);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (43, 109);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (47, 109);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (49, 109);
+insert into ergazetai_se_ergo (ergo_id, ssn) values (53, 110);
