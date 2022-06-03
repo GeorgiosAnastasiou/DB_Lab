@@ -26,4 +26,4 @@ ereunitis er inner join ergazetai_se_ergo erg on er.ssn = erg.ssn
 inner join ergo e on e.ergo_id = erg.ergo_id
 where er.syntomografia = e.syntomografia;
 
-select count(*) from ergazetai_se_ergo; 
+select * from ergazetai_se_ergo order by ssn; 
