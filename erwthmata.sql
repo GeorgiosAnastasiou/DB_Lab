@@ -4,6 +4,9 @@ organismos o on e.syntomografia = o.syntomografia inner join
 ergo er on o.syntomografia = er.syntomografia inner join
 stelexos st on st.stelexos_id = er.stelexos_id group by st.onoma_stelexous order by er.poso desc limit 5;
 
+-- 3.8
+select ssn, onoma, epitheto, count(*)  from ereunitis_vw where ergo_id not in 
+(select ergo_id from paradoteo) group by ssn having count(*)>4 ;
 
 
 -- check an o ypeythynos anhkei sto dynamiko tou organismou
