@@ -28,7 +28,7 @@ CREATE TABLE organismos
   polh VARCHAR(255) NOT NULL,
   PRIMARY KEY (syntomografia)
 );
-select database();
+
 CREATE TABLE panephstimio
 (
   proypologismos_yp FLOAT NOT NULL,
