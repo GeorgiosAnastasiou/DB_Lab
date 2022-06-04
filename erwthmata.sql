@@ -2,7 +2,9 @@
 select st.onoma_stelexous, er.poso, o.onoma from etairia e inner join
 organismos o on e.syntomografia = o.syntomografia inner join
 ergo er on o.syntomografia = er.syntomografia inner join
-stelexos st on st.stelexos_id = er.stelexos_id order by er.poso desc limit 5;
+stelexos st on st.stelexos_id = er.stelexos_id group by st.onoma_stelexous order by er.poso desc limit 5;
+
+
 
 -- check an o ypeythynos anhkei sto dynamiko tou organismou
 select  a.aksiologisi_id from 
