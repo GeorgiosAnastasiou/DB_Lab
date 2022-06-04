@@ -6,18 +6,33 @@
 </head>
 <body>
 	{% block content %}
-	<form method="POST" action='/'>
+	<form method="POST" action='/database'>
 		<input type="submit" name = 'database' value="Go to database">
 	</form>
-	<form method="POST">
+	<form method="POST" action='/Q1'>
 		<input type="submit" name='Q1' value="Go to Q1">
+	</form>
+	<form method="POST" action='/Q2'>
 		<input type="submit" name="Q2" value="Go to Q2">
+	</form>
+	<form method="POST" action='/Q3'>
 		<input type="submit" name="Q3" value="Go to Q3">
+	</form>
+	<form method="POST" action='/Q4'>
 		<input type="submit" name="Q4" value="Go to Q4">
+	</form>
+	<form method="POST" action='/Q5'>
 		<input type="submit" name="Q5" value="Go to Q5">
+	</form>
+	<form method="POST" action='/Q6'>
 		<input type="submit" name="Q6" value="Go to Q6">
+	</form>
+	<form method="POST" action='/Q7'>
 		<input type="submit" name="Q7" value="Go to Q7">	
+	</form>
+	<form method="POST" action='/Q8'>
 		<input type="submit" name="Q8" value="Go to Q8">
+
 	</form>
 	{% endblock %}
 </body>

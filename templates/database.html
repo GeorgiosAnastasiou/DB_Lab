@@ -6,20 +6,46 @@
 </head>
 <body>
     {% block content %}
-    <form method="POST" action="{{url_for('database')}}">
+    <form method="POST" action='/database/epistimoniko_pedio'>
     	<input type="submit" name="submit_button" value="Epistimoniko Pedio">
+    </form>
+    <form method="POST" action='/database/stelexos'>
     	<input type="submit" name="submit_button" value="Stelexos">
+    </form>
+    <form method="POST" action='/database/programma'>
     	<input type="submit" name="submit_button" value="Programma">
+    </form>
+    <form method="POST" action='/database/organismos'>
     	<input type="submit" name="submit_button" value="Organismos">
+    </form>
+    <form method="POST" action='/database/panepistimio'>
     	<input type="submit" name="submit_button" value="Panepistimio">
+    </form>
+    <form method="POST" action='/database/etairia'>
     	<input type="submit" name="submit_button" value="Etairia">
+    </form>
+    <form method="POST" action='/database/ereunitiko_kentro'>
     	<input type="submit" name="submit_button" value="Ereunitiko Kentro">
+    </form>
+    <form method="POST" action='/database/organismos_tilefwna'>
     	<input type="submit" name="submit_button" value="Organismos Tilefwna">
+    </form>
+    <form method="POST" action='/database/ereunitis'>
     	<input type="submit" name="submit_button" value="Ereunitis">
+    </form>
+    <form method="POST" action='/database/aksiologisi'>
     	<input type="submit" name="submit_button" value="Aksiologisi">
+    </form>
+    <form method="POST" action='/database/ergo'>
     	<input type="submit" name="submit_button" value="Ergo">
+    </form>
+    <form method="POST" action='/database/paradoteo'>
     	<input type="submit" name="submit_button" value="Paradoteo">
+    </form>
+    <form method="POST" action='/database/epistimoniko_pedio_ergou'>
     	<input type="submit" name="submit_button" value="Epistimoniko Pedio Ergoy">
+    </form>
+    <form method="POST" action='/database/ergazetai_se'>
     	<input type="submit" name="submit_button" value="Ergazetai Se">
     </form>
     {% endblock %}
