@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width">
+</head>
+<body>
+    {% block content %}
+    <form method="POST" action="{{url_for('database')}}">
+    	<input type="submit" name="submit_button" value="Epistimoniko Pedio">
+    	<input type="submit" name="submit_button" value="Stelexos">
+    	<input type="submit" name="submit_button" value="Programma">
+    	<input type="submit" name="submit_button" value="Organismos">
+    	<input type="submit" name="submit_button" value="Panepistimio">
+    	<input type="submit" name="submit_button" value="Etairia">
+    	<input type="submit" name="submit_button" value="Ereunitiko Kentro">
+    	<input type="submit" name="submit_button" value="Organismos Tilefwna">
+    	<input type="submit" name="submit_button" value="Ereunitis">
+    	<input type="submit" name="submit_button" value="Aksiologisi">
+    	<input type="submit" name="submit_button" value="Ergo">
+    	<input type="submit" name="submit_button" value="Paradoteo">
+    	<input type="submit" name="submit_button" value="Epistimoniko Pedio Ergoy">
+    	<input type="submit" name="submit_button" value="Ergazetai Se">
+    </form>
+    {% endblock %}
+</body>
