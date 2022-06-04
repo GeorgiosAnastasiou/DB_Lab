@@ -1,3 +1,14 @@
+-- 3.5
+select a.onoma_epist_pediou, b.onoma_epist_pediou from 
+epist_pediou_ergou a inner join epist_pediou_ergou b where a.ergo_id = b.ergo_id and a.onoma_epist_pediou < b.onoma_epist_pediou 
+group by a.onoma_epist_pediou, b.onoma_epist_pediou order by count(*) desc limit 3;
+
+
+-- 3.6
+select e.ssn, e.onoma, e.epitheto , count(*) from
+ereunitis e inner join ergazetai_se_ergo erga on e.ssn = erga.ssn where TIMESTAMPDIFF(YEAR, e.hmeromhnia_gennhshs, CURDATE())<40
+group by e.ssn order by count(*) desc limit 3;
+
 -- 3.7
 select st.onoma_stelexous, er.poso, o.onoma from etairia e inner join
 organismos o on e.syntomografia = o.syntomografia inner join
