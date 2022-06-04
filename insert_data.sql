@@ -106,7 +106,7 @@ insert into organismos (syntomografia, onoma, odos, tk, polh) values ('OG', 'Osi
 insert into organismos (syntomografia, onoma, odos, tk, polh) values ('TG', 'Trantow Group', '03455 Waywood Parkway', '50090', 'Santa Clara');
 insert into organismos (syntomografia, onoma, odos, tk, polh) values ('HD', 'Hintz-Denesik', '2 Duke Street', 12132, 'Santa Rita');
 insert into organismos (syntomografia, onoma, odos, tk, polh) values ('FS', 'Feeney and Sons', '1 Burning Wood Alley', '88930', 'Benito Juarez');
-insert into organismos (syntomografia, onoma, odos, tk, polh) values ('KLM', 'Keebler, Lind and Murray', '08351 Orin Place', 'V14', 'Rathdrum');
+insert into organismos (syntomografia, onoma, odos, tk, polh) values ('KLM', 'Keebler, Lind and Murray', '08351 Orin Place', '19914', 'Rathdrum');
 insert into organismos (syntomografia, onoma, odos, tk, polh) values ('WHK', 'Wolf, Hodkiewicz and Kulas', '9846 Saint Paul Place', 35468, 'Jiamaogong');
 insert into organismos (syntomografia, onoma, odos, tk, polh) values ('BC', 'Balistreri-Connelly', '68259 Corscot Plaza', '368418', 'Bezhta');
 insert into organismos (syntomografia, onoma, odos, tk, polh) values ('USPC', 'University of the South Pacific Centre', '3498 Morningstar Crossing', '10754', 'Masindi');
