@@ -8,7 +8,7 @@ on e.ergo_id= ep.ergo_id  where CURRENT_DATE() between e.enarksi and e.liksi and
 
 -- 3.1
 select ergo_id, titlos, enarksi, TIMESTAMPDIFF(MONTH, enarksi, liksi), stelexos_id from ergo
-where stelexos_id = x and TIMESTAMPDIFF(MONTH, enarksi, liksi) operator(px = ) mia timh and enarski
+where stelexos_id = 4 and TIMESTAMPDIFF(MONTH, enarksi, liksi) <= 24 and enarksi > "2021-08-01";
 
 
 
