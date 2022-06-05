@@ -6,6 +6,7 @@ import yaml
 from logging import FileHandler,WARNING
 import markups
 from flask_sqlalchemy import SQLAlchemy
+import numpy as np
 
 app = Flask(__name__)
 
@@ -22,7 +23,7 @@ class ButtonForm(Form):
     Q8 = SubmitField()
 
 class ButtonForm2(Form):
-    epistimoniko_pedio = SubmitField()
+    epist_pedio = SubmitField()
     stelexos = SubmitField() 
     programma = SubmitField()
     organismos = SubmitField()
@@ -34,7 +35,7 @@ class ButtonForm2(Form):
     aksiologisi = SubmitField() 
     ergo = SubmitField()
     paradoteo = SubmitField() 
-    epistimoniko_pedio_ergou = SubmitField() 
+    epist_pedio_ergou = SubmitField() 
     ergazetai_se_ergo = SubmitField() 
 
 # Configure db
@@ -85,8 +86,8 @@ def database():
     form = ButtonForm2()
     return render_template("database.html", form=form)
     if request.method == 'POST':
-        if request.form.get('epistimoniko_pedio'):
-            return render_template("epistimoniko_pedio.html")
+        if request.form.get('epist_pedio'):
+            return render_template("epist_pedio.html")
         elif request.form.get('stelexos'):
             return render_template('stelexos.html')
         elif request.form.get('programma'):
@@ -109,8 +110,8 @@ def database():
             return render_template('ergo.html')
         elif request.form.get('paradoteo'):
             return render_template('paradoteo.html')
-        elif request.form.get('epistimoniko_pedio_ergou'):
-            return render_template('epistimoniko_pedio_ergou.html')
+        elif request.form.get('epist_pedio_ergou'):
+            return render_template('epist_pedio_ergou.html')
         elif request.form.get('ergazetai_se'):
             return render_template("ergazetai_se_ergo.html")
         #else:
@@ -178,12 +179,12 @@ def Q3Full():
     pedio = (request.form['pedio'])
     if request.method == 'POST':
         cur = mysql.connection.cursor()
-        resultValue = cur.execute("select e.ergo_id, e.titlos from ergo e inner join epist_pediou_ergou ep on e.ergo_id= ep.ergo_id  where CURRENT_DATE() between e.enarksi and e.liksi and ep.onoma_epist_pediou =  %s;", (pedio,)) ####allagi
+        resultValue = cur.execute("select e.ergo_id, e.titlos from ergo e inner join epist_pedio_ergou ep on e.ergo_id= ep.ergo_id  where CURRENT_DATE() between e.enarksi and e.liksi and ep.onoma_epist_pediou =  %s;", (pedio,)) ####allagi
         if resultValue>0:
             Q3f1Answer = cur.fetchall()  
         cur.close()
         cur = mysql.connection.cursor()
-        resultValue2 = cur.execute("select distinct vw.ssn, vw.onoma, vw.epitheto from ereunitis_vw vw inner join (select e.ergo_id, e.titlos from ergo e inner join epist_pediou_ergou ep on e.ergo_id= ep.ergo_id  where CURRENT_DATE() between e.enarksi and e.liksi and ep.onoma_epist_pediou = %s ) s on s.ergo_id = vw.ergo_id;", (pedio,))
+        resultValue2 = cur.execute("select distinct vw.ssn, vw.onoma, vw.epitheto from ereunitis_vw vw inner join (select e.ergo_id, e.titlos from ergo e inner join epist_pedio_ergou ep on e.ergo_id= ep.ergo_id  where CURRENT_DATE() between e.enarksi and e.liksi and ep.onoma_epist_pediou = %s ) s on s.ergo_id = vw.ergo_id;", (pedio,))
         if resultValue2>0 and resultValue>0:
             Q3f2Answer = cur.fetchall()
             return render_template('Q3_full.html', Q3f1Answer = Q3f1Answer, Q3f2Answer = Q3f2Answer)
@@ -215,7 +216,7 @@ def Q4():
 def Q5():
     if request.method == 'POST':
         cur = mysql.connection.cursor()
-        resultValue = cur.execute("select a.onoma_epist_pediou, b.onoma_epist_pediou from epist_pediou_ergou a inner join epist_pediou_ergou b where a.ergo_id = b.ergo_id and a.onoma_epist_pediou < b.onoma_epist_pediou group by a.onoma_epist_pediou, b.onoma_epist_pediou order by count(*) desc limit 3; ")
+        resultValue = cur.execute("select a.onoma_epist_pediou, b.onoma_epist_pediou from epist_pedio_ergou a inner join epist_pedio_ergou b where a.ergo_id = b.ergo_id and a.onoma_epist_pediou < b.onoma_epist_pediou group by a.onoma_epist_pediou, b.onoma_epist_pediou order by count(*) desc limit 3; ")
         if resultValue > 0:
             Q5Answer = cur.fetchall()  
             return render_template('Q5.html', Q5Answer = Q5Answer)
@@ -277,73 +278,193 @@ def Q8():
 
 
 '''
-@app.route("/epistimoniko_pedio", methods=['GET', 'POST'])
-def epistimoniko_pedio():
+@app.route("/epist_pedio", methods=['GET', 'POST'])
+def epist_pedio():
     if request.method == 'POST':
         cur = mysql.connection.cursor()
         resultValue = cur.execute(" ")
         if resultValue > 0:
             Answer = cur.fetchall()  
-            return render_template('epistimoniko_pedio.html', '0')
+            return render_template('epist_pedio.html', '0')
         cur.close()
         #return render_template('Q7.html')
     elif request.method == 'GET':
-        return render_template('epistimoniko_pedio.html', '0')
+        return render_template('epist_pedio.html', '0')
 
 
 '''
-'''
-@app.route('/database/<variable>/create')
+
+
+
+@app.route('/database/<variable>/create', methods = ['GET', 'POST'])
 def create(variable):
-    if request.method == 'POST':
+    if request.method == 'POST' or request.method == 'GET':
         cur = mysql.connection.cursor()
-        resultValue = cur.execute(" ")
+        resultValue = cur.execute("SELECT * FROM %s" % variable)
         if resultValue > 0:
             Answer = cur.fetchall()  
-            return render_template('epistimoniko_pedio.html')
+            return render_template('create.html', Answer = Answer)
         cur.close()
-        #return render_template('Q7.html')
-    elif request.method == 'GET':
-        return render_template('epistimoniko_pedio.html')
     
-'''
+
 
 
 @app.route('/database/<variable>/retrieve', methods = ['GET', 'POST'])
 def retrieve(variable):
+    #pedio1 = request.form['pedio1']
     if request.method == 'POST' or request.method == 'GET':
         cur = mysql.connection.cursor()
-        resultValue = cur.execute(" select * from %s;", (variable,))
+        resultValue = cur.execute("SELECT * FROM %s" % variable)
         if resultValue > 0:
             Answer = cur.fetchall()  
-            return render_template('epistimoniko_pedio.html', Answer = Answer)
+            return render_template('retrieve.html', Answer = Answer)
         cur.close()
+
+
+
+        '''if variable == 'epist_pedio':
+            #resultValue = cur.execute("select * from %s;", (pedio1,))
+            #t = ('epist_pedio',)
+            #cur.execute('SELECT * FROM ?', t)
+            symbol = 'epist_pedio'
+            resultValue = cur.execute("SELECT * FROM %s" % symbol)
+            if resultValue > 0:
+                Answer = cur.fetchall()  
+                return render_template('epist_pedio1.html', Answer = Answer)
+            cur.close()
+
+        elif variable == 'stelexos':
+            resultValue = cur.execute("select * from %s;", ('stelexos',))
+            if resultValue > 0:
+                Answer = cur.fetchall()  
+                return render_template('stelexos1.html', Answer = Answer)
+            cur.close()
+
+        elif variable == 'programma':
+            resultValue = cur.execute("select * from %s;", ('programma',))
+            if resultValue > 0:
+                Answer = cur.fetchall()  
+                return render_template('programma1.html', Answer = Answer)
+            cur.close()
+
+        elif variable == 'organismos':
+            resultValue = cur.execute("select * from %s;", ('organismos',))
+            if resultValue > 0:
+                Answer = cur.fetchall()  
+                return render_template('organismos1.html', Answer = Answer)
+            cur.close()
+
+        elif variable == 'panepistimio':
+            resultValue = cur.execute("select * from %s;", ('panepistimio',))
+            if resultValue > 0:
+                Answer = cur.fetchall()  
+                return render_template('panepistimio1.html', Answer = Answer)
+            cur.close()
+
+        elif variable == 'etairia':
+            resultValue = cur.execute("select * from %s;", ('etairia',))
+            if resultValue > 0:
+                Answer = cur.fetchall()  
+                return render_template('etairia1.html', Answer = Answer)
+            cur.close() 
+
+        elif variable == 'ereunitiko_kentro':
+            resultValue = cur.execute("select * from %s;", ('ereunitiko_kentro',))
+            if resultValue > 0:
+                Answer = cur.fetchall()  
+                return render_template('ereunitiko_kentro1.html', Answer = Answer)
+            cur.close() 
+
+        elif variable == 'organismos_tilefwna':
+            resultValue = cur.execute("select * from %s;", ('organismos_tilefwna',))
+            if resultValue > 0:
+                Answer = cur.fetchall()  
+                return render_template('organismos_tilefwna1.html', Answer = Answer)
+            cur.close()
+
+        elif variable == 'ereunitis':
+            resultValue = cur.execute("select * from %s;", ('ereunitis',))
+            if resultValue > 0:
+                Answer = cur.fetchall()  
+                return render_template('ereunitis1.html', Answer = Answer)
+            cur.close()
+
+        elif variable == 'aksiologisi':
+            resultValue = cur.execute("select * from %s;", ('aksiologisi',))
+            if resultValue > 0:
+                Answer = cur.fetchall()  
+                return render_template('aksiologisi1.html', Answer = Answer)
+            cur.close()
+
+        elif variable == 'ergo':
+            resultValue = cur.execute("select * from %s;", ('ergo',))
+            if resultValue > 0:
+                Answer = cur.fetchall()  
+                return render_template('ergo1.html', Answer = Answer)
+            cur.close()
+
+        elif variable == 'paradoteo':
+            resultValue = cur.execute("select * from %s;", ('paradoteo',))
+            if resultValue > 0:
+                Answer = cur.fetchall()  
+                return render_template('paradoteo1.html', Answer = Answer)
+            cur.close()
+
+        elif variable == 'epist_pedio_ergou':
+            resultValue = cur.execute("select * from %s;", ('epist_pedio_ergou',))
+            if resultValue > 0:
+                Answer = cur.fetchall()  
+                return render_template('epist_pedio_ergou1.html', Answer = Answer)
+            cur.close() 
+
+        elif variable == 'ergazetai_se':
+            resultValue = cur.execute("select * from %s;", ('ergazetai_se',))
+            if resultValue > 0:
+                Answer = cur.fetchall()  
+                return render_template('ergazetai_se1.html', Answer = Answer)
+            cur.close()             
         #return render_template('Q7.html')
-    else: #request.method == 'GET':
-        Answer = 0
-        return render_template('epistimoniko_pedio.html', Answer = Answer)   
-
+    #elif request.method == 'GET':
+        #Answer = 0
+        #return render_template('epist_pedio.html', Answer = Answer)   
 
 '''
-@app.route('/database/<variable>/update')
+
+
+
+@app.route('/database/<variable>/update', methods = ['GET', 'POST'])
 def update(variable):
-    
+    if request.method == 'POST' or request.method == 'GET':
+        cur = mysql.connection.cursor()
+        resultValue = cur.execute("SELECT * FROM %s" % variable)
+        if resultValue > 0:
+            Answer = cur.fetchall()  
+            return render_template('update.html', Answer = Answer)
+        cur.close()  
 
 
 
-@app.route('/database/<variable>/delete')
+@app.route('/database/<variable>/delete', methods = ['GET', 'POST'])
 def delete(variable):
-    
-'''
+    if request.method == 'POST' or request.method == 'GET':
+        cur = mysql.connection.cursor()
+        resultValue = cur.execute("SELECT * FROM %s" % variable)
+        if resultValue > 0:
+            Answer = cur.fetchall()  
+            return render_template('delete.html', Answer = Answer)
+        cur.close()   
 
 
 
 
-@app.route("/database/epistimoniko_pedio", methods=['GET', 'POST'])
-def database_epistimoniko_pedio():
-    Answer = 0
-    return render_template('epistimoniko_pedio.html', Answer = Answer)
 
+@app.route("/database/epist_pedio", methods=['GET', 'POST'])
+def database_epist_pedio():
+    #Answer = 0
+    #if bool(Answer):
+        #return render_template('epist_pedio.html', Answer = Answer)
+    #else:  
+    return render_template('epist_pedio.html')
 
 
 @app.route("/database/stelexos", methods=['GET', 'POST'])
@@ -429,9 +550,9 @@ def database_paradoteo():
 
 
 
-@app.route("/database/epistimoniko_pedio_ergou", methods=['GET', 'POST'])
-def database_epistimoniko_pedio_ergou():
-    return render_template('epistimoniko_pedio_ergou.html')
+@app.route("/database/epist_pedio_ergou", methods=['GET', 'POST'])
+def database_epist_pedio_ergou():
+    return render_template('epist_pedio_ergou.html')
 
 
 
