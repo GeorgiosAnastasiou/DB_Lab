@@ -6,7 +6,7 @@
 </head>
 <body>
 	<table border=2>
-		{% for Q in Q2Answer %}
+		{% for Q in Q2A1Answer %}
 		<tr>
 			<td>
 				{{Q[0]}}	
@@ -17,6 +17,31 @@
 			<td>
 				{{Q[2]}}
 			</td>
+			<td>
+				{{Q[3]}}
+			</td>
+			<td>
+				{{Q[4]}}
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+	<p></p>
+	<table border=2>
+		{% for Q in Q2A2Answer %}
+		<tr>
+			<td>
+				{{Q[0]}}	
+			</td>
+			<td>
+				{{Q[1]}}
+			</td>
+			<td>
+				{{Q[2]}}
+			</td>
+			<td>
+				{{Q[3]}}
+			</td>			
 		</tr>
 		{% endfor %}
 	</table>
