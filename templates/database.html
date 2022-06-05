@@ -6,8 +6,8 @@
 </head>
 <body>
     {% block content %}
-    <form method="POST" action='/database/epistimoniko_pedio'>
-    	<input type="submit" name="epistimoniko_pedio" value="Epistimoniko Pedio">
+    <form method="POST" action= "{{ url_for('database_epist_pedio', variable = 'epist_pedio') }}">
+    	<input type="submit" name='epist_pedio' id='epist_pedio' value="Epistimoniko Pedio">
     </form>
     <form method="POST" action='/database/stelexos'>
     	<input type="submit" name="stelexos" value="Stelexos">
@@ -42,8 +42,8 @@
     <form method="POST" action='/database/paradoteo'>
     	<input type="submit" name="paradoteo" value="Paradoteo">
     </form>
-    <form method="POST" action='/database/epistimoniko_pedio_ergou'>
-    	<input type="submit" name="epistimoniko_pedio_ergou" value="Epistimoniko Pedio Ergoy">
+    <form method="POST" action='/database/epist_pedio_ergou'>
+    	<input type="submit" name="epist_pedio_ergou" value="Epistimoniko Pedio Ergoy">
     </form>
     <form method="POST" action='/database/ergazetai_se'>
     	<input type="submit" name="ergazetai_se" value="Ergazetai Se">

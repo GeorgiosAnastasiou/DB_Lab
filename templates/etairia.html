@@ -7,28 +7,30 @@
 
 <body>
 	{% block content %}
-	
-	<!-- CREATE -->
-	<form method="POST" action='/database/etairia/create'>
-		<input type="submit" name = 'create' value="Create">
+		<!-- CREATE -->
+	<form method="POST" action="{{ url_for('create', variable = 'etairia') }}")>
+		<input type="submit" name = 'pedio1' id = 'pedio1' value="Create">
 	</form>
 
-	<!-- RETRIEVE -->
-	<form method="POST" action='/database/etairia/retrieve'>
+		<!-- RETRIEVE -->
+	<form method="POST" action="{{ url_for('retrieve', variable = 'etairia') }}">
 		<input type="submit" name="retrieve" value="Retrieve">
 	</form>
-	
+		
 
-	<!-- UPDATE -->
-	<form method="POST" action='/database/etairia/update'>
+		<!-- UPDATE # polla variables analoga tin metavliti--> 
+	<form method="POST" action= "{{ url_for('update', variable = 'etairia') }}">
 		<input type="submit" name='update' value="Update">
 	</form>
 
 
-	<!-- DELETE -->
-	<form method="POST" action='/database/etairia/delete'>
+		<!-- DELETE -->
+	<form method="POST" action="{{ url_for('delete', variable = 'etairia') }}">
 		<input type="submit" name="delete" value="Delete">
 	</form>
-	
+		
 	{% endblock %}
+	<p> Current Epistimoniko Pedio: </p>
+	
+
 </body>

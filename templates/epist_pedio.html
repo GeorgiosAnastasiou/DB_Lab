@@ -8,24 +8,24 @@
 <body>
 	{% block content %}
 		<!-- CREATE -->
-	<form method="POST" action="{{ url_for('create', variable = 'ergazetai_se_ergo') }}")>
+	<form method="POST" action="{{ url_for('create', variable = 'epist_pedio') }}")>
 		<input type="submit" name = 'pedio1' id = 'pedio1' value="Create">
 	</form>
 
 		<!-- RETRIEVE -->
-	<form method="POST" action="{{ url_for('retrieve', variable = 'ergazetai_se_ergo') }}">
+	<form method="POST" action="{{ url_for('retrieve', variable = 'epist_pedio') }}">
 		<input type="submit" name="retrieve" value="Retrieve">
 	</form>
 		
 
 		<!-- UPDATE # polla variables analoga tin metavliti--> 
-	<form method="POST" action= "{{ url_for('update', variable = 'ergazetai_se_ergo') }}">
+	<form method="POST" action= "{{ url_for('update', variable = 'epist_pedio') }}">
 		<input type="submit" name='update' value="Update">
 	</form>
 
 
 		<!-- DELETE -->
-	<form method="POST" action="{{ url_for('delete', variable = 'ergazetai_se_ergo') }}">
+	<form method="POST" action="{{ url_for('delete', variable = 'epist_pedio') }}">
 		<input type="submit" name="delete" value="Delete">
 	</form>
 		

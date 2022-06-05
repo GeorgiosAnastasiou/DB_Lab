@@ -7,30 +7,29 @@
 
 <body>
 	{% block content %}
-	
-	<!-- CREATE -->
-	<form method="POST" action='/database/aksiologisi/create'>
-		<input type="submit" name = 'create' value="Create">
+		<!-- CREATE -->
+	<form method="POST" action="{{ url_for('create', variable = 'aksiologisi') }}")>
+		<input type="submit" name = 'pedio1' id = 'pedio1' value="Create">
 	</form>
 
-	<!-- RETRIEVE -->
-	<form method="POST" action = "{{ url_for('retrieve', variable = aksiologisi) }}">
+		<!-- RETRIEVE -->
+	<form method="POST" action="{{ url_for('retrieve', variable = 'aksiologisi') }}">
 		<input type="submit" name="retrieve" value="Retrieve">
 	</form>
-	
+		
 
-	<!-- UPDATE -->
-	<form method="POST" action= url_for(update, variable = aksiologisi)>
+		<!-- UPDATE # polla variables analoga tin metavliti--> 
+	<form method="POST" action= "{{ url_for('update', variable = 'aksiologisi') }}">
 		<input type="submit" name='update' value="Update">
 	</form>
 
 
-	<!-- DELETE -->
-	<form method="POST" action='/database/aksiologisi/delete'>
+		<!-- DELETE -->
+	<form method="POST" action="{{ url_for('delete', variable = 'aksiologisi') }}">
 		<input type="submit" name="delete" value="Delete">
 	</form>
-	
+		
 	{% endblock %}
-</body>
+	
 
-"{{ url_for('specific_date', date='2019-04-11') }}"
+</body>

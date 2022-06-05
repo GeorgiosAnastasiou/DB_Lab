@@ -1,0 +1,14 @@
+<div class="container">
+    <table class="table" border=1>
+        <tbody>
+        {% for row in Answer %}
+        	<tr>
+        		<td>{{ loop.index }}</td>
+        		{% for cell in row %}
+            	<td>{{ cell }}</td>
+            	{% endfor %}
+        	</tr>
+    	{% endfor %}
+		</tbody>
+	</table>
+</div>

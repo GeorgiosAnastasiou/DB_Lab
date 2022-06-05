@@ -7,28 +7,29 @@
 
 <body>
 	{% block content %}
-	
-	<!-- CREATE -->
-	<form method="POST" action='/database/ereunitiko_kentro/create'>
-		<input type="submit" name = 'create' value="Create">
+		<!-- CREATE -->
+	<form method="POST" action="{{ url_for('create', variable = 'ereunitiko_kentro') }}")>
+		<input type="submit" name = 'pedio1' id = 'pedio1' value="Create">
 	</form>
 
-	<!-- RETRIEVE -->
-	<form method="POST" action='/database/ereunitiko_kentro/retrieve'>
+		<!-- RETRIEVE -->
+	<form method="POST" action="{{ url_for('retrieve', variable = 'ereunitiko_kentro') }}">
 		<input type="submit" name="retrieve" value="Retrieve">
 	</form>
-	
+		
 
-	<!-- UPDATE -->
-	<form method="POST" action='/database/ereunitiko_kentro/update'>
+		<!-- UPDATE # polla variables analoga tin metavliti--> 
+	<form method="POST" action= "{{ url_for('update', variable = 'ereunitiko_kentro') }}">
 		<input type="submit" name='update' value="Update">
 	</form>
 
 
-	<!-- DELETE -->
-	<form method="POST" action='/database/ereunitiko_kentro/delete'>
+		<!-- DELETE -->
+	<form method="POST" action="{{ url_for('delete', variable = 'ereunitiko_kentro') }}">
 		<input type="submit" name="delete" value="Delete">
 	</form>
-	
+		
 	{% endblock %}
+	
+
 </body>

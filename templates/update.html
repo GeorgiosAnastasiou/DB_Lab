@@ -1,0 +1,36 @@
+<div class="container">
+    <table class="table" border=1>
+        <tbody>
+        {% for row in Answer %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                {% for cell in row %}
+                <td>{{ cell }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<!-- Primary key needs to exist -->
+
+
+<p> 
+    Type the changes you would like to commit:
+</p>
+<p>
+    Note: ID needs to exist
+    <table class="table" border=1>
+        <tr>
+            <form>
+                <td> Change:  </td>
+                {% for cell in Answer[0] %}
+                <td>
+                    <input type="text" id="cell" name= "cell" ><br>
+                </td>
+                {% endfor %}
+            </form> 
+        </tr>
+    </table>
+</p> 
