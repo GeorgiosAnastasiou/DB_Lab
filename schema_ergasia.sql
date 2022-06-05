@@ -209,11 +209,11 @@ DELIMITER ;
 
 DELIMITER //
 
-CREATE TRIGGER ereun_update_trig BEFORE UPDATE ON ereunitis
+CREATE TRIGGER ereun_update_trig after UPDATE ON ereunitis
 FOR EACH ROW
 BEGIN
     if (new.syntomografia <> old.syntomografia) then 
-		if ((select count(*) FROM ergazetai_se_ergo where ssn = old.snn) > 0) then
+		if ((select count(*) FROM ergazetai_se_ergo where old.ssn = ssn) > 0) then
 			SIGNAL SQLSTATE '45000'
            SET MESSAGE_TEXT = 'Ergazetai akoma se ena h perissotera erga';
 	   end if;
