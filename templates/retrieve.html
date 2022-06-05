@@ -1,14 +1,27 @@
+<p> For specific Data, you can 'Ctrl' + 'F' and search for any info you may have! 
+</p>
+
+
+
 <div class="container">
     <table class="table" border=1>
+        <thead>
+            <tr>
+                <th scope="col"> Counter: </th>
+                {% for head in DescTable %}
+                <th scope="col">{{ head[0] }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
         <tbody>
         {% for row in Answer %}
-        	<tr>
-        		<td>{{ loop.index }}</td>
-        		{% for cell in row %}
-            	<td>{{ cell }}</td>
-            	{% endfor %}
-        	</tr>
-    	{% endfor %}
-		</tbody>
-	</table>
+            <tr>
+                <td><b>{{ loop.index }}</b></td>
+                {% for cell in row %}
+                <td>{{ cell }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 </div>

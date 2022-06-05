@@ -1,9 +1,17 @@
 <div class="container">
     <table class="table" border=1>
+        <thead>
+            <tr>
+                <th scope="col"> Counter: </th>                
+                {% for head in DescTable %}
+                <th scope="col">{{ head }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
         <tbody>
         {% for row in Answer %}
             <tr>
-                <td>{{ loop.index }}</td>
+                <td><b>{{ loop.index }}</b></td>
                 {% for cell in row %}
                 <td>{{ cell }}</td>
                 {% endfor %}
@@ -12,25 +20,65 @@
         </tbody>
     </table>
 </div>
-
 <!-- Primary key needs to exist -->
 
 
-<p> 
-    Type the changes you would like to commit:
+<!-- how we will do it:
+    type in 1/2 IDs
+    type in field u want to change
+    type in change
+-->
+
+
+<p>
+    Please fill ID, then the field you want to change (names written above), then the new data.
 </p>
 <p>
-    Note: ID needs to exist
+    Note2: ID needs to exist
+    {% if P1 == 0 %}
+    <form method='POST' action= "{{ url_for('updated_table', variable = variable, var = 'update', DescTable = DescTable)}}">
+        <label for="ID1"> {{DescTable[P2[0]]}} : </label>
+        <input type="text" id="ID1", name="ID1">
+        <label for="ID2"> {{DescTable[P2[1]]}} : </label>
+        <input type="text" id="ID2", name="ID2">
+        <label for="change"> What will you change? </label>
+        <input type="text" id="change", name="change">
+        <label for="new_data"> New data: </label>
+        <input type="text" id="new_data", name="new_data">
+        <button type="submit"> Update </button>
+    </form>
+    {% endif %}
+    {% if P1 > 0 %}
+    <form method='POST' action= "{{ url_for('updated_table', variable = variable, var = 'update', DescTable = DescTable)}}">
+        <label for="ID"> {{DescTable[P1]}} : </label>
+        <input type="text" id="ID", name="ID">
+        <label for="change"> What will you change? </label>
+        <input type="text" id="change", name="change">
+        <label for="new_data"> New data: </label>
+        <input type="text" id="new_data", name="new_data">
+        <button type="submit"> Update </button>
+    </form>
+    {% endif %}
+</p> 
+
+
+
+
+<!--   
     <table class="table" border=1>
         <tr>
-            <form>
+            <form method='POST' action= "{{ url_for('updated_table', variable = variable, var = 'update')}}">
                 <td> Change:  </td>
                 {% for cell in Answer[0] %}
                 <td>
-                    <input type="text" id="cell" name= "cell" ><br>
+                    <input type="text" id="cell" name= "cell"  ><br>
                 </td>
                 {% endfor %}
-            </form> 
+                <button type="submit" >
+                Update Table
+                </button>
+            </form>
         </tr>
     </table>
-</p> 
+
+-->

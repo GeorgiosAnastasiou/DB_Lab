@@ -1,16 +1,24 @@
 <div class="container">
     <table class="table" border=1>
+        <thead>
+            <tr>
+                <th scope="col"> Counter: </th>
+                {% for head in DescTable %}
+                <th scope="col">{{ head }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
         <tbody>
         {% for row in Answer %}
-        	<tr>
-        		<td>{{ loop.index }}</td>
-        		{% for cell in row %}
-            	<td>{{ cell }}</td>
-            	{% endfor %}
-        	</tr>
-    	{% endfor %}
-		</tbody>
-	</table>
+            <tr>
+                <td><b>{{ loop.index }}</b></td>
+                {% for cell in row %}
+                <td>{{ cell }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 </div>
 
 <!-- Primary key needs to not exist -->
@@ -23,13 +31,14 @@
     Note: ID needs to be different from existent ones
     <table class="table" border=1>
         <tr>
-            <form>
+            <form method = 'POST' action = "{{ url_for('updated_table', variable = variable, var = 'create', DescTable = DescTable)}}">
                 <td> Change:  </td>
                 {% for cell in Answer[0] %}
                 <td>
                     <input type="text" id="cell" name= "cell" ><br>
                 </td>
                 {% endfor %}
+
             </form> 
         </tr>
     </table>
