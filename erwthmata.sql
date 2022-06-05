@@ -1,3 +1,17 @@
+-- 3.3
+select e.ergo_id, e.titlos from ergo e inner join epist_pediou_ergou ep
+on e.ergo_id= ep.ergo_id  where CURRENT_DATE() between e.enarksi and e.liksi and ep.onoma_epist_pediou = 'Mathematics';
+
+select distinct vw.ssn, vw.onoma, vw.epitheto from ereunitis_vw vw inner join (select e.ergo_id, e.titlos from ergo e inner join epist_pediou_ergou ep
+on e.ergo_id= ep.ergo_id  where CURRENT_DATE() between e.enarksi and e.liksi and ep.onoma_epist_pediou = 'Mathematics') s on s.ergo_id = vw.ergo_id;
+
+
+-- 3.1
+select ergo_id, titlos, enarksi, TIMESTAMPDIFF(MONTH, enarksi, liksi), stelexos_id from ergo
+where stelexos_id = x and TIMESTAMPDIFF(MONTH, enarksi, liksi) operator(px = ) mia timh and enarski
+
+
+
 -- 3.5
 select a.onoma_epist_pediou, b.onoma_epist_pediou from 
 epist_pediou_ergou a inner join epist_pediou_ergou b where a.ergo_id = b.ergo_id and a.onoma_epist_pediou < b.onoma_epist_pediou 

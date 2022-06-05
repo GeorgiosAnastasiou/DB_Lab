@@ -34,7 +34,7 @@ CREATE TABLE panephstimio
   proypologismos_yp FLOAT NOT NULL,
   syntomografia VARCHAR(50) NOT NULL,
   PRIMARY KEY (syntomografia),
-  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia) ON DELETE RESTRICT ON UPDATE CASCADE
+  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE etairia
@@ -42,7 +42,7 @@ CREATE TABLE etairia
   idia_kefalaia FLOAT NOT NULL,
   syntomografia VARCHAR(50) NOT NULL,
   PRIMARY KEY (syntomografia),
-  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia) ON DELETE RESTRICT ON UPDATE CASCADE
+  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE er_kentro
@@ -51,7 +51,7 @@ CREATE TABLE er_kentro
   proypologismos_id FLOAT NOT NULL,
   syntomografia VARCHAR(50) NOT NULL,
   PRIMARY KEY (syntomografia),
-  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia) ON DELETE RESTRICT ON UPDATE CASCADE
+  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE organismos_thlefwna
@@ -59,7 +59,7 @@ CREATE TABLE organismos_thlefwna
   thlefwna BIGINT NOT NULL,
   syntomografia VARCHAR(50) NOT NULL,
   PRIMARY KEY (thlefwna, syntomografia),
-  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia) ON DELETE RESTRICT ON UPDATE CASCADE
+  FOREIGN KEY (syntomografia) REFERENCES organismos(syntomografia) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE ereunitis
@@ -116,7 +116,7 @@ CREATE TABLE paradoteo
   hm_paradoshs DATE NOT NULL,
   ergo_id INT UNSIGNED NOT NULL,
   PRIMARY KEY (titlos_paradoteou, ergo_id),
-  FOREIGN KEY (ergo_id) REFERENCES ergo(ergo_id) ON DELETE RESTRICT ON UPDATE CASCADE
+  FOREIGN KEY (ergo_id) REFERENCES ergo(ergo_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE epist_pediou_ergou
