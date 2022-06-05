@@ -154,20 +154,9 @@ BEGIN
 		SET MESSAGE_TEXT = 'Error: O ypeuthinos prepei na anhkei ston organismo pou ylopoiei to ergo';
     END IF;
 END//  
-DELIMITER ; 
 
-DELIMITER //
-CREATE TRIGGER ergo_update_trig BEFORE UPDATE ON ergo
-FOR EACH ROW
-BEGIN
-    if (new.syntomografia <> old.syntomografia) then 
-		if ((select count(*) FROM ergazetai_se_ergo where ergo_id = old.ergo_idergo_update_trigergo_update_trig) > 0) then
-			SIGNAL SQLSTATE '45000'
-           SET MESSAGE_TEXT = 'Error: Ergazontai akoma ereunites panw se auto to ergo.';
-	   end if;
-    end if;
-END//
-DELIMITER ;   
+
+
 
 DELIMITER //
 CREATE TRIGGER ergazetai_se_ergo_trig BEFORE INSERT ON ergazetai_se_ergo 
@@ -178,19 +167,8 @@ BEGIN
 		SET MESSAGE_TEXT = 'Error: O ereunitis prepei na anhkei ston organismo pou ylopoiei to ergo';
    end if;
 END//
-
-CREATE TRIGGER ereun_update_trig BEFORE UPDATE ON ereunitis
-FOR EACH ROW
-BEGIN
-    if (new.syntomografia <> old.syntomografia) then 
-		if ((select count(*) FROM ergazetai_se_ergo where ergo_id = old.ergo_id) > 0) then
-			SIGNAL SQLSTATE '45000'
-           SET MESSAGE_TEXT = 'Ergazetai akoma se ena h perissotera erga';
-	   end if;
-    end if;
-END//  
-
 DELIMITER ;
+
 
 
 DELIMITER //
@@ -215,6 +193,34 @@ BEGIN
     END IF;
 END//   
 DELIMITER ; 
+
+DELIMITER //
+CREATE TRIGGER ergo_update_trig BEFORE UPDATE ON ergo
+FOR EACH ROW
+BEGIN
+    if (new.syntomografia <> old.syntomografia) then 
+		if ((select count(*) FROM ergazetai_se_ergo where ergo_id = old.ergo_id ) > 0) then
+			SIGNAL SQLSTATE '45000'
+           SET MESSAGE_TEXT = 'Error: Ergazontai akoma ereunites panw se auto to ergo.';
+	   end if;
+    end if;
+END//
+DELIMITER ;   
+
+DELIMITER //
+
+CREATE TRIGGER ereun_update_trig BEFORE UPDATE ON ereunitis
+FOR EACH ROW
+BEGIN
+    if (new.syntomografia <> old.syntomografia) then 
+		if ((select count(*) FROM ergazetai_se_ergo where ssn = old.snn) > 0) then
+			SIGNAL SQLSTATE '45000'
+           SET MESSAGE_TEXT = 'Ergazetai akoma se ena h perissotera erga';
+	   end if;
+    end if;
+END//  
+
+DELIMITER ;
 
 
 
