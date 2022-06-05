@@ -9,18 +9,24 @@
 	{% block content %}
 	
 	<!-- CREATE -->
-	<form method="POST" action='/organismos_tilefwna/create'>
+	<form method="POST" action='/database/organismos_tilefwna/create'>
 		<input type="submit" name = 'create' value="Create">
 	</form>
 
+	<!-- RETRIEVE -->
+	<form method="POST" action='/database/organismos_tilefwna/retrieve'>
+		<input type="submit" name="retrieve" value="Retrieve">
+	</form>
+	
+
 	<!-- UPDATE -->
-	<form method="POST" action='/organismos_tilefwna/update'>
+	<form method="POST" action='/database/organismos_tilefwna/update'>
 		<input type="submit" name='update' value="Update">
 	</form>
 
 
 	<!-- DELETE -->
-	<form method="POST" action='/organismos_tilefwna/delete'>
+	<form method="POST" action='/database/organismos_tilefwna/delete'>
 		<input type="submit" name="delete" value="Delete">
 	</form>
 	

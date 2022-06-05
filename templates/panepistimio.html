@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content = "width=device-width">
+</head>
+
+<body>
+	{% block content %}
+	
+	<!-- CREATE -->
+	<form method="POST" action='/database/panepistimio/create'>
+		<input type="submit" name = 'create' value="Create">
+	</form>
+
+	<!-- RETRIEVE -->
+	<form method="POST" action='/database/panepistimio/retrieve'>
+		<input type="submit" name="retrieve" value="Retrieve">
+	</form>
+	
+
+	<!-- UPDATE -->
+	<form method="POST" action='/database/panepistimio/update'>
+		<input type="submit" name='update' value="Update">
+	</form>
+
+
+	<!-- DELETE -->
+	<form method="POST" action='/database/panepistimio/delete'>
+		<input type="submit" name="delete" value="Delete">
+	</form>
+	
+	{% endblock %}
+</body>

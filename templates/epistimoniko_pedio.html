@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content = "width=device-width">
+</head>
+
+<body>
+	{% block content %}
+	
+	<!-- CREATE -->
+	<form method="POST" action= url_for(create, variable = 'epistimoniko_pedio')>
+		<input type="submit" name = 'create' value="Create">
+	</form>
+
+	<!-- RETRIEVE -->
+	<form method="POST" action="{{ url_for('retrieve', variable = 'epistimoniko_pedio') }}">
+		<input type="submit" name="retrieve" value="Retrieve">
+	</form>
+	
+
+	<!-- UPDATE # polla variables analoga tin metavliti--> 
+	<form method="POST" action=url_for(update, variable = epistimoniko_pedio)>
+		<input type="submit" name='update' value="Update">
+	</form>
+
+
+	<!-- DELETE -->
+	<form method="POST" action=url_for(delete, variable = epistimoniko_pedio)>
+		<input type="submit" name="delete" value="Delete">
+	</form>
+	
+	{% endblock %}
+	<p> Current Epistimoniko Pedio: </p>
+	<table border=2>
+		{% if Answer > 0 %}
+			{% for Q in Answer %}
+			<tr>
+				<td>
+					{{Q[0]}}	
+				</td>
+			</tr>
+			{% endfor %}
+		{% endif %}
+	</table>
+</body>
