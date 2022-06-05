@@ -6,8 +6,7 @@ import yaml
 from logging import FileHandler,WARNING
 import markups
 from flask_sqlalchemy import SQLAlchemy
-import numpy as np
-
+import re, string, numpy as np
 app = Flask(__name__)
 
 
@@ -300,10 +299,40 @@ def epist_pedio():
 def create(variable):
     if request.method == 'POST' or request.method == 'GET':
         cur = mysql.connection.cursor()
-        resultValue = cur.execute("SELECT * FROM %s" % variable)
-        if resultValue > 0:
-            Answer = cur.fetchall()  
-            return render_template('create.html', Answer = Answer)
+        resultValue1 = cur.execute("SELECT * FROM %s" % variable)
+        if resultValue1 > 0:
+            Answer = cur.fetchall()
+        resultValue2 = cur.execute("select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME= '%s' " % variable)
+        if resultValue2 > 0 and resultValue1 > 0:
+            #DescTable0=[]
+            DescTable = cur.fetchall()
+            #DescTable=[]
+            #DescTable1=[]
+            #DescTable2=[]
+            #for i in range(0, len(DescTable)):
+                #DescTable1[i] = DescTable0[i].replace('(',) 
+                #DescTable2[i] = DescTable1[i].replace(')',)
+                #DescTable[i] = DescTable2[i].replace('"',)
+                #DescTable[i] = DescTable3[i].strip(',')
+            if variable == 'stelexos' or variable == 'panepistimio' or variable == 'etairia':
+                P1 = 2
+                P2 = 0
+            elif variable == 'ereunitiko_kentro' or variable == 'aksiologisi':
+                P1 = 3
+                P2 = 0
+            elif variable == 'ereunitis':
+                P1 = 6
+                P2 = 0
+            elif variable == 'organismos_tilefwna' or variable == 'epist_pedio_ergou' or variable == 'ergazetai_se_ergo':
+                P1 = 0
+                P2 = ["1","2"]
+            elif variable == 'paradoteo':
+                P1 = 0
+                P2 = ["1","4"]
+            else:
+                P1 = 1
+                P2 = 0
+            return render_template('create.html', Answer = Answer, DescTable = DescTable, P1 = P1, P2 = P2, variable = variable)
         cur.close()
     
 
@@ -314,132 +343,93 @@ def retrieve(variable):
     #pedio1 = request.form['pedio1']
     if request.method == 'POST' or request.method == 'GET':
         cur = mysql.connection.cursor()
-        resultValue = cur.execute("SELECT * FROM %s" % variable)
-        if resultValue > 0:
-            Answer = cur.fetchall()  
-            return render_template('retrieve.html', Answer = Answer)
+        resultValue1 = cur.execute("SELECT * FROM %s" % variable)
+        if resultValue1 > 0:
+            Answer = cur.fetchall() 
+        resultValue2 = cur.execute("select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME= '%s' " % variable)
+        if resultValue2 > 0 and resultValue1 > 0:
+            '''DescTable0=[]
+            DescTable=[]
+            DescTable1=[]
+            DescTable2=[]            
+            '''
+            DescTable = cur.fetchall()
+            '''for i in range(0, len(DescTable)):
+                DescTable1[i] = DescTable0[i].rstrip('(') 
+                DescTable2[i] = DescTable1[i].rstrip(')')
+                DescTable[i] = DescTable2[i].rstrip('"')
+                #DescTable[i] = DescTable3[i].strip(',')
+            '''
+            if variable == 'stelexos' or variable == 'panepistimio' or variable == 'etairia':
+                P1 = 2
+                P2 = 0
+            elif variable == 'ereunitiko_kentro' or variable == 'aksiologisi':
+                P1 = 3
+                P2 = 0
+            elif variable == 'ereunitis':
+                P1 = 6
+                P2 = 0
+            elif variable == 'organismos_tilefwna' or variable == 'epist_pedio_ergou' or variable == 'ergazetai_se_ergo':
+                P1 = 0
+                P2 = ["1","2"]
+            elif variable == 'paradoteo':
+                P1 = 0
+                P2 = ["1","4"]
+            else:
+                P1 = 1
+                P2 = 0
+            return render_template('retrieve.html', Answer = Answer, DescTable = DescTable, P1 = P1, P2 = P2)
         cur.close()
-
-
-
-        '''if variable == 'epist_pedio':
-            #resultValue = cur.execute("select * from %s;", (pedio1,))
-            #t = ('epist_pedio',)
-            #cur.execute('SELECT * FROM ?', t)
-            symbol = 'epist_pedio'
-            resultValue = cur.execute("SELECT * FROM %s" % symbol)
-            if resultValue > 0:
-                Answer = cur.fetchall()  
-                return render_template('epist_pedio1.html', Answer = Answer)
-            cur.close()
-
-        elif variable == 'stelexos':
-            resultValue = cur.execute("select * from %s;", ('stelexos',))
-            if resultValue > 0:
-                Answer = cur.fetchall()  
-                return render_template('stelexos1.html', Answer = Answer)
-            cur.close()
-
-        elif variable == 'programma':
-            resultValue = cur.execute("select * from %s;", ('programma',))
-            if resultValue > 0:
-                Answer = cur.fetchall()  
-                return render_template('programma1.html', Answer = Answer)
-            cur.close()
-
-        elif variable == 'organismos':
-            resultValue = cur.execute("select * from %s;", ('organismos',))
-            if resultValue > 0:
-                Answer = cur.fetchall()  
-                return render_template('organismos1.html', Answer = Answer)
-            cur.close()
-
-        elif variable == 'panepistimio':
-            resultValue = cur.execute("select * from %s;", ('panepistimio',))
-            if resultValue > 0:
-                Answer = cur.fetchall()  
-                return render_template('panepistimio1.html', Answer = Answer)
-            cur.close()
-
-        elif variable == 'etairia':
-            resultValue = cur.execute("select * from %s;", ('etairia',))
-            if resultValue > 0:
-                Answer = cur.fetchall()  
-                return render_template('etairia1.html', Answer = Answer)
-            cur.close() 
-
-        elif variable == 'ereunitiko_kentro':
-            resultValue = cur.execute("select * from %s;", ('ereunitiko_kentro',))
-            if resultValue > 0:
-                Answer = cur.fetchall()  
-                return render_template('ereunitiko_kentro1.html', Answer = Answer)
-            cur.close() 
-
-        elif variable == 'organismos_tilefwna':
-            resultValue = cur.execute("select * from %s;", ('organismos_tilefwna',))
-            if resultValue > 0:
-                Answer = cur.fetchall()  
-                return render_template('organismos_tilefwna1.html', Answer = Answer)
-            cur.close()
-
-        elif variable == 'ereunitis':
-            resultValue = cur.execute("select * from %s;", ('ereunitis',))
-            if resultValue > 0:
-                Answer = cur.fetchall()  
-                return render_template('ereunitis1.html', Answer = Answer)
-            cur.close()
-
-        elif variable == 'aksiologisi':
-            resultValue = cur.execute("select * from %s;", ('aksiologisi',))
-            if resultValue > 0:
-                Answer = cur.fetchall()  
-                return render_template('aksiologisi1.html', Answer = Answer)
-            cur.close()
-
-        elif variable == 'ergo':
-            resultValue = cur.execute("select * from %s;", ('ergo',))
-            if resultValue > 0:
-                Answer = cur.fetchall()  
-                return render_template('ergo1.html', Answer = Answer)
-            cur.close()
-
-        elif variable == 'paradoteo':
-            resultValue = cur.execute("select * from %s;", ('paradoteo',))
-            if resultValue > 0:
-                Answer = cur.fetchall()  
-                return render_template('paradoteo1.html', Answer = Answer)
-            cur.close()
-
-        elif variable == 'epist_pedio_ergou':
-            resultValue = cur.execute("select * from %s;", ('epist_pedio_ergou',))
-            if resultValue > 0:
-                Answer = cur.fetchall()  
-                return render_template('epist_pedio_ergou1.html', Answer = Answer)
-            cur.close() 
-
-        elif variable == 'ergazetai_se':
-            resultValue = cur.execute("select * from %s;", ('ergazetai_se',))
-            if resultValue > 0:
-                Answer = cur.fetchall()  
-                return render_template('ergazetai_se1.html', Answer = Answer)
-            cur.close()             
-        #return render_template('Q7.html')
-    #elif request.method == 'GET':
-        #Answer = 0
-        #return render_template('epist_pedio.html', Answer = Answer)   
-
-'''
-
 
 
 @app.route('/database/<variable>/update', methods = ['GET', 'POST'])
 def update(variable):
     if request.method == 'POST' or request.method == 'GET':
         cur = mysql.connection.cursor()
-        resultValue = cur.execute("SELECT * FROM %s" % variable)
-        if resultValue > 0:
+        resultValue1 = cur.execute("SELECT * FROM %s" % variable)
+        if resultValue1 > 0:
             Answer = cur.fetchall()  
-            return render_template('update.html', Answer = Answer)
+        resultValue2 = cur.execute("select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME= '%s' " % variable)
+        if resultValue2 > 0 and resultValue1 > 0:
+            '''
+            DescTable0=[]
+            DescTable=[]
+            DescTable1=[]
+            DescTable2=[]'''            
+            DescTable = cur.fetchall()
+            #i=0
+            #DescTable = []
+            '''for x in DescTable0:
+                if bool(DescTable0[x]):
+                    DescTable[i] = x
+                    i = i + 1
+            '''
+            '''
+            for i in range(0, len(DescTable)):
+                DescTable1[i] = DescTable0[i].rstrip('(') 
+                DescTable2[i] = DescTable1[i].rstrip(')')
+                DescTable[i] = DescTable2[i].rstrip('"')
+                #DescTable[i] = DescTable3[i].strip(',')
+                '''
+            if variable == 'stelexos' or variable == 'panepistimio' or variable == 'etairia':
+                P1 = 2
+                P2 = 0
+            elif variable == 'ereunitiko_kentro' or variable == 'aksiologisi':
+                P1 = 3
+                P2 = 0
+            elif variable == 'ereunitis':
+                P1 = 6
+                P2 = 0
+            elif variable == 'organismos_tilefwna' or variable == 'epist_pedio_ergou' or variable == 'ergazetai_se_ergo':
+                P1 = 0
+                P2 = ["1","2"]
+            elif variable == 'paradoteo':
+                P1 = 0
+                P2 = ["1","4"]
+            else:
+                P1 = 1
+                P2 = 0
+            return render_template('update.html', Answer = Answer, DescTable = DescTable, P1 = P1, P2 = P2)
         cur.close()  
 
 
@@ -448,11 +438,145 @@ def update(variable):
 def delete(variable):
     if request.method == 'POST' or request.method == 'GET':
         cur = mysql.connection.cursor()
-        resultValue = cur.execute("SELECT * FROM %s" % variable)
-        if resultValue > 0:
+        resultValue1 = cur.execute("SELECT * FROM %s" % variable)
+        if resultValue1 > 0:
             Answer = cur.fetchall()  
-            return render_template('delete.html', Answer = Answer)
+        resultValue2 = cur.execute("select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME= '%s' " % variable)
+        if resultValue2 > 0 and resultValue1 > 0:
+            '''DescTable0=[]
+            DescTable=[]
+            DescTable1=[]
+            DescTable2=[]
+            '''
+            DescTable = cur.fetchall()
+            '''
+            for i in range(0, len(DescTable)):
+                DescTable1[i] = DescTable0[i].rstrip('(') 
+                DescTable2[i] = DescTable1[i].rstrip(')')
+                DescTable[i] = DescTable2[i].rstrip('"')
+                #DescTable[i] = DescTable3[i].strip(',')
+                '''
+            if variable == 'stelexos' or variable == 'panepistimio' or variable == 'etairia':
+                P1 = 2
+                P2 = 0
+            elif variable == 'ereunitiko_kentro' or variable == 'aksiologisi':
+                P1 = 3
+                P2 = 0
+            elif variable == 'ereunitis':
+                P1 = 6
+                P2 = 0
+            elif variable == 'organismos_tilefwna' or variable == 'epist_pedio_ergou' or variable == 'ergazetai_se_ergo':
+                P1 = 0
+                P2 = ["1","2"]
+            elif variable == 'paradoteo':
+                P1 = 0
+                P2 = ["1","4"]
+            else:
+                P1 = 1
+                P2 = 0
+            return render_template('delete.html', Answer = Answer, DescTable = DescTable, P1 = P1, P2 = P2)
         cur.close()   
+
+
+
+
+
+
+
+
+
+
+@app.route('/database/<variable>/updated_table', methods = ['GET', 'POST'])
+def updated_table(variable, var, DescTable):
+    if request.method == 'POST':
+        if variable == 'stelexos' or variable == 'panepistimio' or variable == 'etairia':
+            P1 = 2
+            P2 = 0
+        elif variable == 'ereunitiko_kentro' or variable == 'aksiologisi':
+            P1 = 3
+            P2 = 0
+        elif variable == 'ereunitis':
+            P1 = 6
+            P2 = 0
+        elif variable == 'organismos_tilefwna' or variable == 'epist_pedio_ergou' or variable == 'ergazetai_se_ergo':
+            P1 = 0
+            P2 = ["1","2"]
+        elif variable == 'paradoteo':
+            P1 = 0
+            P2 = ["1","4"]
+        else:
+            P1 = 1
+            P2 = 0
+
+
+        cur = mysql.connection.cursor()
+        if P1 > 0:
+            temp = DescTable[P1]
+            if var == 'update':
+            
+            #new_row = request.form.get("cell")
+            #use primary key
+            #resultValue = cur.execute("SELECT %s FROM %s" % i % variable)
+            
+                #query1 = "update %s set %s = %s where %s = %s"
+                an1 = request.form.get("change")
+                an2 = request.form.get("new_data")
+                #cur.execute(query1, variable, an1, an2, an1, temp2)
+                an3 = request.form.get("ID")
+                cur.execute("update %s set %s = %s where %s = %s" % variable % an1 %an2 % temp % an3)
+
+            elif var == 'delete':
+                old_row = request.form.get("ID")
+                cur.execute("delete from %s where %s = %s;" % variable % temp %old_row)
+
+
+        else:
+            temp1 = DescTable[P2[0]]
+            temp2 = DescTable[P2[1]]
+            old_row1 = request.form.get("ID1")
+            old_row2 = request.form.get("ID2")
+            if var == 'update':
+                an1 = request.form.get("change")
+                an2 = request.form.get("new_data")
+                cur.execute("update %s set %s = %s where %s = %s and %s = %s" % variable % an1 %an2 % temp1 % old_row1 % temp2 % old_row2)
+            elif var == 'delete':
+                cur.execute("delete from %s where %s = %s and %s = %s;" % variable % temp1 %old_row1 % temp2 % old_row2)
+
+            elif var == 'create':
+                cell = request.form.get("cell")
+
+    resultValue1 = cur.execute("SELECT * FROM %s" % variable)    
+    Answer = cur.fetchall() 
+    resultValue2 = cur.execute("select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME= '%s' " % variable)
+    #DescTable0=[]
+    DescTable=[]
+    '''DescTable1=[]
+    DescTable2=[]'''
+    DescTable = cur.fetchall()
+    '''for i in range(0, len(DescTable)):
+        DescTable1[i] = DescTable0[i].rstrip('(') 
+        DescTable2[i] = DescTable1[i].rstrip(')')
+        DescTable[i] = DescTable2[i].rstrip('"')
+        #DescTable[i] = DescTable3[i].strip(',')'''
+    return render_template('retrieve.html', Answer = Answer, DescTable = DescTable, P1 = P1, P2 = P2)
+    cur.close()
+
+
+
+
+#insert into epist_pedio_ergou (ergo_id, onoma_epist_pediou) values (1, 'Nano-technology');
+
+
+#query = f"update * FROM books WHERE id IN ({','.join(['?'] * len(session['cart']))})"
+#cur.execute(query,session['cart'])
+
+#an3 = cur.execute("select %s from %s where %s = %s;" % an1 % variable % )
+
+#delete from epist_pedio where onoma_epist_pediou = 'Mathematics';
+#update epist_pedio set onoma_epist_pediou = 'Mathimatika' where onoma_epist_pediou = 'Mathematics';
+
+
+
 
 
 
@@ -564,3 +688,8 @@ def database_ergazetai_se():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+
+
+
