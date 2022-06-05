@@ -17,7 +17,6 @@ select a.onoma_epist_pediou, b.onoma_epist_pediou from
 epist_pedio_ergou a inner join epist_pedio_ergou b where a.ergo_id = b.ergo_id and a.onoma_epist_pediou < b.onoma_epist_pediou 
 group by a.onoma_epist_pediou, b.onoma_epist_pediou order by count(*) desc limit 3;
 
-
 -- 3.6
 select e.ssn, e.onoma, e.epitheto , count(*) from
 ereunitis e inner join ergazetai_se_ergo erga on e.ssn = erga.ssn where TIMESTAMPDIFF(YEAR, e.hmeromhnia_gennhshs, CURDATE())<40
@@ -31,7 +30,7 @@ stelexos st on st.stelexos_id = er.stelexos_id group by st.onoma_stelexous order
 
 -- 3.8
 select ssn, onoma, epitheto, count(*)  from ereunitis_vw where ergo_id not in 
-(select ergo_id from paradoteo) group by ssn having count(*)>4 ;
+(select ergo_id from paradoteo) group by ssn having count(*)>4;
 
 
 -- check an o ypeythynos anhkei sto dynamiko tou organismou
@@ -57,3 +56,4 @@ inner join ergo e on e.ergo_id = erg.ergo_id
 where er.syntomografia = e.syntomografia;
 
 select * from ergazetai_se_ergo order by ssn;
+describe ergo;

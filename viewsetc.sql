@@ -3,7 +3,7 @@ create index indx_enarksi on ergo(enarksi);
 create index indx_liksi on ergo(liksi);
 
 
-show index from ergo;
+
 CREATE VIEW ereunitis_vw (ssn, onoma, epitheto, ergo_id, titlos) AS
 SELECT e.ssn, e.onoma, e.epitheto, erg.ergo_id, erg.titlos from
 ereunitis e inner join ergazetai_se_ergo erga on e.ssn = erga.ssn inner join
