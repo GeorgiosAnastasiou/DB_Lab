@@ -1,8 +1,8 @@
 -- 3.3
-select e.ergo_id, e.titlos from ergo e inner join epist_pediou_ergou ep
+select e.ergo_id, e.titlos from ergo e inner join epist_pedio_ergou ep
 on e.ergo_id= ep.ergo_id  where CURRENT_DATE() between e.enarksi and e.liksi and ep.onoma_epist_pediou = 'Mathematics';
 
-select distinct vw.ssn, vw.onoma, vw.epitheto from ereunitis_vw vw inner join (select e.ergo_id, e.titlos from ergo e inner join epist_pediou_ergou ep
+select distinct vw.ssn, vw.onoma, vw.epitheto from ereunitis_vw vw inner join (select e.ergo_id, e.titlos from ergo e inner join epist_pedio_ergou ep
 on e.ergo_id= ep.ergo_id  where CURRENT_DATE() between e.enarksi and e.liksi and ep.onoma_epist_pediou = 'Mathematics') s on s.ergo_id = vw.ergo_id;
 
 
@@ -14,7 +14,7 @@ where stelexos_id = x and TIMESTAMPDIFF(MONTH, enarksi, liksi) operator(px = ) m
 
 -- 3.5
 select a.onoma_epist_pediou, b.onoma_epist_pediou from 
-epist_pediou_ergou a inner join epist_pediou_ergou b where a.ergo_id = b.ergo_id and a.onoma_epist_pediou < b.onoma_epist_pediou 
+epist_pedio_ergou a inner join epist_pedio_ergou b where a.ergo_id = b.ergo_id and a.onoma_epist_pediou < b.onoma_epist_pediou 
 group by a.onoma_epist_pediou, b.onoma_epist_pediou order by count(*) desc limit 3;
 
 
@@ -49,11 +49,11 @@ where er.syntomografia = o.syntomografia;
 select  count(e.ssn) from ereunitis e
 inner join ergo erg on e.syntomografia = erg.syntomografia  where e.ssn>60 order by e.ssn;
 
-select ergo_id, count(*) from epist_pediou_ergou group by ergo_id having count(*)>1;
+select ergo_id, count(*) from epist_pedio_ergou group by ergo_id having count(*)>1;
 
 select count(*) from 
 ereunitis er inner join ergazetai_se_ergo erg on er.ssn = erg.ssn 
 inner join ergo e on e.ergo_id = erg.ergo_id
 where er.syntomografia = e.syntomografia;
 
-select * from ergazetai_se_ergo order by ssn; 
+select * from ergazetai_se_ergo order by ssn;
